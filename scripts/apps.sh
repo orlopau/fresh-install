@@ -6,7 +6,7 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --noconfirm manjaro-keyring
 sudo pacman -Suu --noconfirm
 
-sudo pacman -S --noconfirm git zsh yay base-devel alacritty flameshot nnn go micro stow glances
+sudo pacman -S --noconfirm git zsh yay base-devel alacritty flameshot nnn go micro stow glances keychain
 
 yay -S --noconfirm google-chrome
 yay -S --noconfirm visual-studio-code-bin

@@ -425,8 +425,8 @@ for_window [class="Spotify"] move to workspace $ws8
 exec xrandr --output DP-0 --mode 5120x1440
 #exec termite
 #exec chromium
-exec spotify
-exec ~/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
+#exec spotify
+#exec ~/.local/share/JetBrains/Toolbox/bin/jetbrains-toolbox --minimize
 exec redshift -O 2300K -P
 exec flameshot
 

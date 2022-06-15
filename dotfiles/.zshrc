@@ -113,7 +113,7 @@ alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
 
 keychain-start(){
-    eval $(keychain --eval --nogui ~/.ssh/id_rsa ~/.ssh/id_rsa_conimon)    
+    eval $(keychain --eval --nogui ~/.ssh/key_zenbook)    
 }
 
 

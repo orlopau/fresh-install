@@ -17,5 +17,6 @@ yay -S --noconfirm jetbrains-toolbox
 git config --global user.name orlobpaul@gmail.com
 git config --global user.email Paul Orlob
 git config --global core.editor micro
+git config --global pull.ff only
 
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"

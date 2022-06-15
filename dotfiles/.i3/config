@@ -443,4 +443,4 @@ for_window [class="Mavproxy"] no_focus
 focus_on_window_activation urgent
 
 # Wallpaper
-exec_always feh --bg-scale --no-xinerama /home/paul/Pictures/Wallpapers/HDRshooter-super-ultra-wide-wallpaper-011.jpg
+exec_always feh --bg-scale --no-xinerama /home/paul/Pictures/wallpaper.jpg

@@ -135,6 +135,9 @@ gdirexec(){
 
 alias gstdir=git-summary
 
+# alias ssh to provide TERM env, see https://github.com/alacritty/alacritty/issues/3360
+alias ssh="TERM=xterm-256color ssh"
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 

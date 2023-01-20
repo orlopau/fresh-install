@@ -1,21 +1,49 @@
 #!/bin/bash
 
-# Using manjaro i3 minimal
+apps_manjaro()
+{
+	# Using manjaro i3 minimal
 
-sudo pacman -Syu --noconfirm
-sudo pacman -S --noconfirm manjaro-keyring
-sudo pacman -Suu --noconfirm
+	sudo pacman -Syu --noconfirm
+	sudo pacman -S --noconfirm manjaro-keyring
+	sudo pacman -Suu --noconfirm
 
-sudo pacman -S --noconfirm git zsh yay base-devel alacritty flameshot nnn go micro stow glances keychain feh
+	sudo pacman -S --noconfirm git zsh yay base-devel alacritty flameshot nnn go micro stow glances keychain feh
 
-yay -S --noconfirm google-chrome
-yay -S --noconfirm visual-studio-code-bin
-yay -S --noconfirm spotify
-yay -S --noconfirm ttf-meslo-nerd-font-powerlevel10k
-yay -S --noconfirm jetbrains-toolbox
+	yay -S --noconfirm google-chrome
+	yay -S --noconfirm visual-studio-code-bin
+	yay -S --noconfirm spotify
+	yay -S --noconfirm ttf-meslo-nerd-font-powerlevel10k
+	yay -S --noconfirm jetbrains-toolbox	
+}
 
-git config --global user.name orlobpaul@gmail.com
-git config --global user.email Paul Orlob
+apps_ubuntu()
+{
+	echo "No apps for ubuntu yet."
+}
+
+echo "Installing packages..."
+echo "Enter [m] for manjaro, [u] for ubuntu."
+read input
+if [ "$input" == "m" ]; then
+	apps_manjaro
+elif [ "$input" == "u" ]; then
+	apps_ubuntu
+else
+	echo "invalid input"
+	exit 1
+fi
+
+echo "Setting up git..."
+echo "Enter E-Mail:"
+read git_mail
+echo "Enter name:"
+read git_name
+echo "E-Mail: $git_mail , Name: $git_name"
+read -p "Press any key to continue..."
+
+git config --global user.name $git_mail
+git config --global user.email $git_name
 git config --global core.editor micro
 git config --global pull.ff only
 

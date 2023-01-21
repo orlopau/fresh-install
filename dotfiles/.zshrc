@@ -87,6 +87,10 @@ alias n="nnn -e"
 alias setclip="xclip -selection c"
 alias getclip="xclip -selection c -o"
 
+keychain-start(){
+    eval $(keychain --eval --nogui ~/.ssh/id_rsa ~/.ssh/id_github)
+}
+
 # source profile
 source ~/.profile
 

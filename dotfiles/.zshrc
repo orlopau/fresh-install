@@ -122,5 +122,5 @@ source ~/.profile
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias xrandr_home="xrandr --output HDMI-A-0 --auto && xrandr --output eDP --off"
-alias xrandr_normal="xrandr --output eDP --auto && xrandr --output HDMI-A-0 --off"
+alias xrandr_home="xrandr --output HDMI-A-0 --mode 5120x1440 --dpi HDMI-A-0 --output eDP --off"
+alias xrandr_normal="xrandr --output eDP --auto --dpi eDP --output HDMI-A-0 --off"
